@@ -7,8 +7,7 @@ project_name: "---project-name---"
 {% extends 'page.njk' %}
 
 {% block body %}
-  <h2 class="text-4xl py-4">Homepage</h2>
-  <p>The project name is {{project_name}}</p>
+  <h2 class="text-4xl py-4">Homepage of  {{project_name}}</h2>
   <p>{{ some_var }}</p>
   <p>{{a_different_var}}</p>
   {{ components.array_to_paragrpah(
