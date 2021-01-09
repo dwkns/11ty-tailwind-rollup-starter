@@ -1,16 +1,22 @@
 module.exports = (config) => {
-  config.addPassthroughCopy({ "src/public": "./" });
-  config.setDataDeepMerge(true);
+config.addPassthroughCopy({ 'src/public': './' });
 
   config.setBrowserSyncConfig({
-    files: ["dist/**/*"],
+    files: ['dist/**/*'],
     open: true,
   });
-  // config.setDataDeepMerge(true)
+
+  config.setDataDeepMerge(true);
+
+
   return {
+
     dir: {
-      input: "src",
-      output: "dist",
+      input: 'src',
+      output: 'dist',
+      includes: '_includes',
+      layouts: 'includes/layouts',
+      data: '_data',
     },
   };
 };
