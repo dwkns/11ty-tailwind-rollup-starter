@@ -1,4 +1,4 @@
 {
-  "title": "tite from page json",
-  "a_different_var" : "a_different_var from the json"
+  "title": "Title from index.json",
+  "a_different_var" : "a_different_var from index.json"
 }
