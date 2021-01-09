@@ -1,12 +1,14 @@
 ---
 title: "Title from index.njk"
 some_var: "some_var from the template"
+project_name: "---project-name---"
 ---
 {% import '_components/_components.njk' as components %}
 {% extends 'page.njk' %}
 
 {% block body %}
   <h2 class="text-4xl py-4">Homepage</h2>
+  <p>The project name is {{project_name}}</p>
   <p>{{ some_var }}</p>
   <p>{{a_different_var}}</p>
   {{ components.array_to_paragrpah(
