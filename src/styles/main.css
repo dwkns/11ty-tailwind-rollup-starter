@@ -13,7 +13,9 @@
 
 
 @font-face {
-  font-family:"Graphik regular";
-  src:url("/fonts/Graphik-Regular-Web.woff2") format("woff2"),url("/fonts/Graphik-Regular-Web.woff") format("woff");
+  font-family:"Graphik";
+  src: url("/fonts/Graphik-Regular-Web.woff2") format("woff2"), url("/fonts/Graphik-Regular-Web.woff") format("woff");
+  unicode-range: U+000-5FF;
+  font-display: optional;
 }
  

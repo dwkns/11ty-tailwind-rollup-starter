@@ -1,7 +1,8 @@
 {
   "name": "11ty-tailwind-rollup-starter",
-  "description": "Starter project for 11ty",
+  "nameLegal": "Under2 Limited",
   "url": "https://yourUrl.com",
+  "logoUrl": "https://yourUrl.com/images/someLogoFile.png",
   "baseUrl": "/",
   "author": {
     "handle": "@dwkns",

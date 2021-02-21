@@ -1,21 +1,31 @@
-module.exports = (config) => {
-config.addPassthroughCopy({ 'src/public': './' });
+const markdownIt = require("markdown-it"); 
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addPassthroughCopy({
+    'src/static': './',
+    'src/images': './images'
+  });
 
-  config.setBrowserSyncConfig({
+  eleventyConfig.setLibrary("md", markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  }));
+    typographer:  true,
+
+    eleventyConfig.setBrowserSyncConfig({
     files: ['dist/**/*'],
     open: true,
   });
 
-  config.setDataDeepMerge(true);
-
+  eleventyConfig.setDataDeepMerge(true);
 
   return {
 
     dir: {
       input: 'src',
       output: 'dist',
-      includes: '_includes',
-      layouts: 'includes/layouts',
+      includes: '_partials/',
+      layouts: '_partials/_layouts',
       data: '_data',
     },
   };

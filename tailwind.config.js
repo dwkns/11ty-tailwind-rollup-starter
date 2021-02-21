@@ -15,7 +15,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        graphix: ["Graphik regular"],
+        graphix: ["Graphik"],
       },
       colors: {
         "u2-gold": "#F4B41A",
